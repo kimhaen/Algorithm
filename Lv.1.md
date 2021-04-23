@@ -139,7 +139,10 @@ K번째 수 (정렬)
 ---------------
 Ans
 ~~~~~~~~~~~~~~~~~~~~java
-import java.util.Arrays; class Solution { 
+import java.util.Arrays; 
+
+
+class Solution { 
   public int[] solution(int[] array, int[][] commands) { 
     int[] answer = new int[commands.length]; 
     
