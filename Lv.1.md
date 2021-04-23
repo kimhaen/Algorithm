@@ -175,6 +175,10 @@ class Solution {
 
 Arrays.copyOfRange
 
+//사용방법
+
+Arrays.copyOfRange(배열, 시작인덱스, 끝인덱스)
+
 //결과물
 
 arr의 요소 중 인덱스2에서 5까지  불러오기 : 2,3,4,5 
