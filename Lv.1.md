@@ -1,4 +1,4 @@
-완주하지 못한 선수
+완주하지 못한 선수 (HASH)
 ---------------
 
 Ans
@@ -134,3 +134,55 @@ System.out.println(map.get(1));//key값 1의 value얻기 : 사과
 
 ~~~~~~~
 
+
+K번째 수 (정렬)
+---------------
+Ans
+~~~~~~~~~~~~~~~~~~~~java
+import java.util.Arrays; class Solution { 
+  public int[] solution(int[] array, int[][] commands) { 
+    int[] answer = new int[commands.length]; 
+    
+    for(int i=0; i<commands.length; i++){ 
+
+      int[] temp = Arrays.copyOfRange(array, commands[i][0]-1, commands[i][1]); 
+      
+      Arrays.sort(temp); answer[i] = temp[commands[i][2]-1]; } return answer; 
+      } 
+      
+    }
+
+~~~~~~~~~~~~~~~~~~~~
+
+
+Keyword
+~~~java
+//JAVA 특정범위 배열복사 
+
+Arrays.copyOfRange
+
+//결과물
+
+arr의 요소 중 인덱스2에서 5까지  불러오기 : 2,3,4,5 
+
+//예제 코드
+
+import java.util.*;
+
+public class Solution {
+private static int[] arr = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+
+public static void main(String[] args) {
+
+//여기서 Arrays.copyOfRange 실행
+int[] arr1 = Arrays.copyOfRange(arr, 2,6);
+
+System.out.print("arr의 요소 중 인덱스2에서 5까지  불러오기 :  ");
+for(int i=0;i<arr1.length;i++) {
+System.out.print(arr1[i]+" ");
+    }
+  }
+}
+
+
+~~~
