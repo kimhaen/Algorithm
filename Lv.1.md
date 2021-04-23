@@ -72,6 +72,25 @@ Modified arr[] : [6, 7, 9, 13, 21, 45, 101, 102]
 
 
 
+// for문에서 : 의 의미
+
+for (Object obj : files)
+
+for(DrawObject obj : list)
+
+...
+
+for( A : B )
+
+B에 0, 1, 2, 3, 4, 5 의 값이 들어가있을 때
+
+A = 0;
+A = 1;
+A = 2;
+A = 3;
+A = 4;
+A = 5;
+
 ~~~~~~~
 
 Ans - HASH를 이용한 풀이(Key & Value)
@@ -131,6 +150,13 @@ map.put(3,"포도");
 
 System.out.println(map); //전체 출력 : {1=사과, 2=바나나, 3=포도}
 System.out.println(map.get(1));//key값 1의 value얻기 : 사과
+
+
+
+
+
+
+
 
 ~~~~~~~
 
